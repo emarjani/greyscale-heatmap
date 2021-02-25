@@ -2,8 +2,19 @@
     border: 1px grey solid;
 }
 
+body {
+    margin: 0;
+    --lvl1: rgb(204, 204, 204);
+    --lvl2: rgb(202, 202, 202);
+    --lvl3: rgb(126, 126, 126);
+    --lvl4: rgb(63, 63, 63);
+    --lvl5: rgb(15, 15, 15);
+}
+
+
 header {
-    min-height: 70px;
+    min-height: 100px;
+    background-color: var(--lvl4);
 }
 
 #headline-container {
@@ -25,6 +36,7 @@ header {
 }
 
 .newsletter {
+    background-color: var(--lvl1);
     border: 1px red solid;
     max-height: 500px;
     min-width: 30%;
@@ -53,6 +65,7 @@ header {
 }
 
 #join-members{
+    background-color: var(--lvl1);
     grid-row: 2;
     grid-column: 1/4;
 }
@@ -60,6 +73,7 @@ header {
 /* ________________________ */
 
 #meet-click {
+    background-color: var(--lvl4);
     border: 2px pink solid;
     min-height: 1000px;
 }
@@ -69,7 +83,7 @@ header {
 #our-guides {
     border: 2px green solid;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.5fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
@@ -78,10 +92,15 @@ header {
     min-height: 450px;
 }
 
+#guide-newsletter {
+    background-color: var(--lvl4);
+}
+
 
 /* ________________________ */
 
 #featured-book {
+    background-color: var(--lvl4);
     border: 2px red solid;
     min-height: 400px;
 }
@@ -111,7 +130,9 @@ header {
 }
 
 
+/* ________________________ */
 
 footer {
+    background-color: var(--lvl4);
     min-height: 1000px;
 }
