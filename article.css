@@ -1,4 +1,117 @@
 * {
-    border: 1px grey dashed;
+    border: 1px grey solid;
 }
 
+header {
+    min-height: 70px;
+}
+
+#headline-container {
+    display: flex;
+    border: 3px purple solid;
+}
+
+.headline-articles {
+    min-width: 65%;
+}
+
+.headline-articles article:first-child {
+    min-height: 300px;
+}
+
+.headline-articles article {
+    min-height: 200px;
+    margin: 20px 20px 20px 20px;
+}
+
+.newsletter {
+    border: 1px red solid;
+    max-height: 500px;
+    min-width: 30%;
+    margin: 20px 20px 20px 20px;
+}
+
+.main-margin {
+    margin: 30px 100px 30px 100px;
+}
+
+
+/* ________________________ */
+
+.latest-posts{
+    border: 2px blue solid;
+    /* min-height: 3000px; */
+    /* width: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.latest-posts article{
+    min-height: 500px;
+}
+
+#join-members{
+    grid-row: 2;
+    grid-column: 1/4;
+}
+
+/* ________________________ */
+
+#meet-click {
+    border: 2px pink solid;
+    min-height: 1000px;
+}
+
+/* ________________________ */
+
+#our-guides {
+    border: 2px green solid;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+#our-guides .guide {
+    min-height: 450px;
+}
+
+
+/* ________________________ */
+
+#featured-book {
+    border: 2px red solid;
+    min-height: 400px;
+}
+
+
+/* ________________________ */
+
+#community-links {
+    border: 2px blue solid;
+    min-height: 1000px;
+}
+
+#potw {
+    min-height: 275px;
+    margin-bottom: 15px;
+}
+
+#community-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#community-links-grid section {
+    min-height: 275px;
+}
+
+
+
+footer {
+    min-height: 1000px;
+}
